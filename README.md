@@ -1,5 +1,7 @@
 # ArgoCD on Kubernetes (Minikube)
 
+## Instalar e iniciar ArgoCD
+
 Iniciar minikube (el servicio de Docker tiene que estar corriendo)
 ```
 $ minikube start
@@ -37,4 +39,13 @@ $ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.p
 ```
 
 Una vez hemos hecho login, cambiar la contraseña desde `User Info`.
+
+## Configurar un repositorio
+
+Settings -> Repositories -> Connect Repo:
+```
+Type: Git
+Project: default
+Repository URL: https://github.com/slavid/argocd-project.git
+```
 
