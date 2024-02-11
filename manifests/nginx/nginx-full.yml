@@ -76,7 +76,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: index-html-configmap
-  namespace: testing
+  namespace: nginx-testing
 data:
   index.html: |
     <html>
